@@ -1,10 +1,10 @@
-function mergesort(array) {
-    var n = arr.length;
+function mergesort(arr) {
+  var n = arr.length;
 
   for (var curr_size = 1; curr_size <= n - 1; curr_size = 2 * curr_size) {
-      for (var left_start = 0; left_start < n - 1; left_start += 2 * curr_size) {
-          var mid = Math.min(left_start + curr_size - 1, n - 1);
-          var right_end = Math.min(left_start + 2 * curr_size - 1, n - 1);
+      for (var left_start = 0; left_start < n; left_start += 2 * curr_size) {
+          var mid = Math.floor(left_start + curr_size - 1, n - 1);
+          var right_end = Math.floor(left_start + 2 * curr_size - 1, n - 1);
           var start = left_start;
           var start2 = mid + 1;
 
@@ -33,5 +33,4 @@ function mergesort(array) {
       }
   }
   return arr;
-    return array;
 }
