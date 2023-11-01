@@ -15,3 +15,7 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+## My Response
+
+I feel like the analysis should be the same as normal at $\theta(nlogn)$ but that doesn't seem right, because since it's not recursive it's not doin the same thing as a regular mergesort, and since it's running through four different loops in the worst case scenario I feel like it should be $\theta(n^4)$ because for larger arrays this iterative, in-place mergesort would be very inefficient and slow.
